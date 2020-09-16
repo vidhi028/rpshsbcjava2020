@@ -1,0 +1,16 @@
+Income Tax
+Male
+
+>30L tax 30%
+20L-29L tax 20%
+
+10L-19L tax 10%
+Below 10L no Tax
+
+
+Female
+>30L tax 25%
+20L-29L tax 15%
+
+10L-19L tax 5%
+Below 10L no Tax
