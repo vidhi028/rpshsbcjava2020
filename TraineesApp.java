@@ -14,6 +14,11 @@ public class TraineesApp {
 		//add 5 trainees		
 		createTrainees();
 		getTrainees();		
+		System.out.print("User Status:");
+		int genRandom=new Random().nextInt(5);
+		System.out.println(validateLogin(traineeList[genRandom].getUserName(),
+				traineeList[genRandom].getPassword()));
+		
 		
 	}	
 	
@@ -40,4 +45,26 @@ public class TraineesApp {
 							+ "Password="+trainee.getPassword());
 	}
 
+	
+	
+	public static boolean validateLogin(String userName,String password)
+	{
+		boolean status=false;
+		
+		for(Trainee trainee:traineeList)
+		{
+			if((trainee.getUserName().equals(userName))&&(trainee.getPassword()
+					.equals(password)))
+			{
+			    status=true;
+				break;
+				
+			}		
+		}
+		
+		
+		return status;
+		
+		
+	}
 }
