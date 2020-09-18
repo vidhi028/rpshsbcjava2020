@@ -86,7 +86,10 @@ public class PolicyHolderApp {
 			
 			policyHolder.setAddressList(addressList);
 			
-			policyHolderBL.addPolicyHolder(policyHolder);
+			if( policyHolderBL.addPolicyHolder(policyHolder))
+				System.out.println("Record Added.....");
+			else
+				System.out.println("Error in input..., Record not added");
 			
 			
 			
